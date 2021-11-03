@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  line-height: 1.1;
+}
+
+body h1 {
+  text-align: center;
+  color: #00494d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 8px;
+  padding: 2rem;
+}
+
+main {
+  background-color: #fff;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5%;
+}
+
+main label {
+  display: block;
+  color: #5e7a7d;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+main .totalDiv {
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+main .totalDivValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+main .totalDivValues p {
+  color: #fff;
+}
+
+main .totalDivValues p span {
+  color: #7f9c9f;
+  font-size: 0.7rem;
+}
+
+main .totalDivValues h2 {
+  color: #26c0ab;
+}
+/*# sourceMappingURL=styles.css.map */
