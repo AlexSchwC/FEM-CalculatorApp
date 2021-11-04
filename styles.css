@@ -6,25 +6,10 @@
   padding: 0;
 }
 
-body {
-  font-family: "Space Mono", monospace;
-  background-color: #c5e4e7;
-  line-height: 1.1;
-}
-
-body h1 {
-  text-align: center;
-  color: #00494d;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 8px;
-  padding: 2rem;
-}
-
-main {
-  background-color: #fff;
-  padding: 2rem;
+.second-section {
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,24 +17,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-main label {
-  display: block;
-  color: #5e7a7d;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 8px 0;
-}
-
-main .totalDiv {
-  background-color: #00494d;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-main .totalDivValues {
+.second-section-values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,16 +37,185 @@ main .totalDivValues {
   margin: 1rem 0;
 }
 
-main .totalDivValues p {
+.second-section-values p {
   color: #fff;
 }
 
-main .totalDivValues p span {
+.second-section-values p span {
   color: #7f9c9f;
   font-size: 0.7rem;
 }
 
-main .totalDivValues h2 {
+.second-section-values h2 {
   color: #26c0ab;
+}
+
+.second-section-btn {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 1rem;
+}
+
+.second-section-btn button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  border: none;
+  color: #00494d;
+  background-color: #26c0ab;
+}
+
+.second-section-btn button:hover {
+  cursor: pointer;
+}
+
+.second-section-btn button:active {
+  background-color: #95eadf;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  line-height: 1.4;
+}
+
+body h1 {
+  text-align: center;
+  color: #00494d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 8px;
+  padding: 2rem;
+}
+
+main {
+  background-color: #fff;
+  padding: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1.5rem;
+}
+
+main .titles {
+  margin: 8px 0;
+}
+
+main .titles h3 {
+  display: inline;
+  color: #5e7a7d;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main .input-div {
+  margin: 1.5rem 0;
+  padding: 0 0.5rem;
+}
+
+main .input-div:nth-child(1) {
+  margin-top: 0;
+}
+
+main .input-div .input-bkg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px;
+  background-color: #f4fafa;
+  border-radius: 0.5rem;
+}
+
+main .input-div .input-bkg .input-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.8rem;
+}
+
+main .input-div .input-bkg .input-number {
+  width: 100%;
+  padding-right: 0.8rem;
+}
+
+main .input-div .input-bkg .input-number input {
+  width: 100%;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #00494d;
+  border: none;
+  background-color: #f4fafa;
+  text-align: right;
+  outline: none;
+}
+
+main .input-div .tip-btn-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  min-width: 0;
+}
+
+main .input-div .tip-btn-grid .tip-btn {
+  width: 100%;
+  font-size: 24px;
+  padding: 0.5rem;
+}
+
+main .input-div .tip-btn-grid #custom-input {
+  width: 100%;
+  font-size: 24px;
+  padding: 0.5rem;
+  text-align: right;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f4fafa;
+}
+
+main .input-div .tip-btn-grid #custom-input::-webkit-input-placeholder {
+  color: #5e7a7d;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .input-div .tip-btn-grid #custom-input:-ms-input-placeholder {
+  color: #5e7a7d;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .input-div .tip-btn-grid #custom-input::-ms-input-placeholder {
+  color: #5e7a7d;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .input-div .tip-btn-grid #custom-input::placeholder {
+  color: #5e7a7d;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */
