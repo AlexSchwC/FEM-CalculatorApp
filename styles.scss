@@ -22,7 +22,7 @@ main {
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
 
     .titles {
         margin: 8px 0;
@@ -78,22 +78,40 @@ main {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.2rem;
-            min-width: 0;
 
             .tip-btn {
                 width: 100%;
                 font-size: 24px;
                 padding: 0.5rem;
+                border-radius: 0.5rem;
+                border: none;
+                font-family: $font-prim;
+                font-weight: 700;
+                color: #fff;
+                background-color: $dark-cyan-0;
+                cursor: pointer;
+
+                &:active {
+                    background-color: lighten($primaria, 30%);
+                    color: $dark-cyan-0;
+                }
             }
 
             #custom-input {
                 width: 100%;
+                color: $dark-cyan-0;
+                font-family: $font-prim;
+                font-weight: 700;
                 font-size: 24px;
                 padding: 0.5rem;
                 text-align: right;
                 border-radius: 0.5rem;
                 border: none;
                 background-color: $light-cyan-2;
+
+                &:focus {
+                    outline: solid 3px $primaria;
+                }
 
                 &::placeholder { 
                 color: $dark-cyan-1;
@@ -105,11 +123,3 @@ main {
         }
     }
 }
-
-// &::placeholder { 
-//     color: $dark-cyan-1;
-//     font-family: $font-prim;
-//     font-size: 24px;
-//     font-weight: 700;
-// }
-
