@@ -6,75 +6,16 @@
   padding: 0;
 }
 
-.second-section {
-  background-color: #00494d;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.second-section-values {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-weight: 700;
-  margin: 1rem 0;
-}
-
-.second-section-values p {
-  color: #fff;
-}
-
-.second-section-values p span {
-  color: #7f9c9f;
-  font-size: 0.7rem;
-}
-
-.second-section-values h2 {
-  color: #26c0ab;
-}
-
-.second-section-btn {
-  width: 100%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-top: 1rem;
-}
-
-.second-section-btn button {
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 20px;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  border-radius: 0.4rem;
-  border: none;
-  color: #00494d;
-  background-color: #26c0ab;
-}
-
-.second-section-btn button:hover {
-  cursor: pointer;
-}
-
-.second-section-btn button:active {
-  background-color: #95eadf;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 body {
@@ -104,6 +45,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 1.5rem 1.5rem 0 0;
+  max-width: 992px;
 }
 
 main .titles {
@@ -174,6 +116,11 @@ main .input-div .tip-btn-grid {
   gap: 1.2rem;
 }
 
+main .input-div .tip-btn-grid #active-btn {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
 main .input-div .tip-btn-grid .tip-btn {
   width: 100%;
   font-size: 24px;
@@ -203,37 +150,154 @@ main .input-div .tip-btn-grid #custom-input {
   border-radius: 0.5rem;
   border: none;
   background-color: #f4fafa;
-}
-
-main .input-div .tip-btn-grid #custom-input:focus {
-  outline: solid 3px #26c0ab;
+  outline: none;
 }
 
 main .input-div .tip-btn-grid #custom-input::-webkit-input-placeholder {
-  color: #5e7a7d;
+  color: #00494d;
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
 }
 
 main .input-div .tip-btn-grid #custom-input:-ms-input-placeholder {
-  color: #5e7a7d;
+  color: #00494d;
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
 }
 
 main .input-div .tip-btn-grid #custom-input::-ms-input-placeholder {
-  color: #5e7a7d;
+  color: #00494d;
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
 }
 
 main .input-div .tip-btn-grid #custom-input::placeholder {
-  color: #5e7a7d;
+  color: #00494d;
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
+}
+
+.second-section {
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.second-section-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.second-section-values p {
+  color: #fff;
+}
+
+.second-section-values p span {
+  color: #7f9c9f;
+  font-size: 0.7rem;
+}
+
+.second-section-values h2 {
+  color: #26c0ab;
+}
+
+.second-section-btn {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: auto;
+}
+
+.second-section-btn button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  border: none;
+  color: #00494d;
+  background-color: #26c0ab;
+}
+
+.second-section-btn button:hover {
+  cursor: pointer;
+}
+
+.second-section-btn button:active {
+  background-color: #95eadf;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main {
+    min-width: 992px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+  main .first-section {
+    width: 50%;
+    margin-right: 1rem;
+  }
+  main .second-section {
+    width: 50%;
+    margin-left: 1rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+  main .second-section-values h2 {
+    font-size: 2.5rem;
+  }
+  main .input-div .tip-btn-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

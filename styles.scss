@@ -1,5 +1,4 @@
 @import 'globais';
-@import 'second-section';
 
 body {
     font-family: $font-prim;
@@ -23,6 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     border-radius: 1.5rem 1.5rem 0 0;
+    max-width: 992px;
 
     .titles {
         margin: 8px 0;
@@ -79,6 +79,11 @@ main {
             grid-template-columns: 1fr 1fr;
             gap: 1.2rem;
 
+            #active-btn {
+                background-color: $primaria;
+                color: $dark-cyan-0;
+            }
+
             .tip-btn {
                 width: 100%;
                 font-size: 24px;
@@ -108,13 +113,14 @@ main {
                 border-radius: 0.5rem;
                 border: none;
                 background-color: $light-cyan-2;
+                outline: none;
 
-                &:focus {
-                    outline: solid 3px $primaria;
-                }
+                // &:focus {
+                //     outline: solid 3px $primaria;
+                // }
 
                 &::placeholder { 
-                color: $dark-cyan-1;
+                color: $dark-cyan-0;
                 font-family: $font-prim;
                 font-size: 24px;
                 font-weight: 700;
@@ -123,3 +129,6 @@ main {
         }
     }
 }
+
+@import 'second-section';
+@import 'media-queries';

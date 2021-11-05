@@ -23,7 +23,7 @@
             <img src="images/icon-dollar.svg" alt="">
           </div>
           <div class="input-number">
-            <input type="number" id="bill-input" class="full-input">
+            <input type="number" min="0" id="bill-input" class="full-input" placeholder="0">
           </div>
         </div>
       </div>
@@ -33,19 +33,19 @@
         </div>
         <div class="tip-btn-grid">
           <div>
-            <button class="tip-btn">5%</button>
+            <button class="tip-btn" value="5">5%</button>
           </div>
           <div>
-            <button class="tip-btn">10%</button>
+            <button class="tip-btn" value="10" id="active-btn">10%</button>
           </div>
           <div>
-            <button class="tip-btn">15%</button>
+            <button class="tip-btn" value="15">15%</button>
           </div>
           <div>
-            <button class="tip-btn">25%</button>
+            <button class="tip-btn" value="25">25%</button>
           </div>
           <div>
-            <button class="tip-btn">50%</button>
+            <button class="tip-btn" value="50">50%</button>
           </div>
           <div class="custom-input">
             <input type="number" id="custom-input" placeholder="Custom">
@@ -62,7 +62,7 @@
             <img src="images/icon-person.svg" alt="">
           </div>
           <div class="input-number">
-            <input type="number" id="people-input" class="full-input">
+            <input type="number" min="1" id="people-input" class="full-input" placeholder="0">
           </div>
         </div>
       </div>
