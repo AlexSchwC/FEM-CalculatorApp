@@ -3,7 +3,7 @@
 Essa é uma solução ao [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### The challenge
+### O Desafio
 
 Users should be able to:
 
@@ -28,7 +28,7 @@ Usuários devem poder:
 - URL do Repositório: (https://github.com/AlexSchwC/FEM-CalculatorApp)
 - URL Site Live: (https://peaceful-northcutt-dd9480.netlify.app/)
 
-## My process
+## Meu Processo
 
 Primeiramente foi feito toda a marcação do HTML baseado em um arquivo base sem marcação que o Front End Mentor proporcionou, mas conforme fui desenvolvendo a parte de SASS e o JavaScript tive de revisitar e fazer algumas altualizações pontuais no HTML.
 
@@ -38,7 +38,7 @@ Alguns pontos da estilização precisavam do uso de JavaScript para ficarem fina
 
 Então finalmente adicionei o código que iria gerenciar as variáveis relevantes e depois as funções que fazem o cálculo da conta e o botão de reset.
 
-### Built with
+### Construído com:
 
 - Semantic HTML5 markup;
 - SASS;
@@ -47,22 +47,22 @@ Então finalmente adicionei o código que iria gerenciar as variáveis relevante
 - Mobile-first workflow;
 - JavaScript padrão, nenhum framework foi usado;
 
-### What I learned
+### O que eu aprendi
 
 Pratica com SASS em um projeto real;
 Estilização de Inputs mais aprofundada;
 Uso dos Event Listeners Active e Blur;
 Uso basico de Grid;
 
-### Continued development
+### Projetos Futuros
 
 No proximo exercício do FrontEndMentor que pegar pra fazer vou atrás de um que seja mais intenso na parte de JavaScript e que me force a aprender novas tecnologias.
 
-### Useful resources
+### Recursos Uteis
 
 - [Crash Course de SASS](https://www.youtube.com/watch?v=_a5j7KoflTs&ab_channel=freeCodeCamp.org) - Me ensinou o que eu precisava para iniciar em SASS. 
 
-## Author
+## Autor
 
 - Frontend Mentor - [@AlexSchwC](https://www.frontendmentor.io/profile/AlexSchwC)
 - Github - AlexSchwC (https://github.com/AlexSchwC)
