@@ -26,6 +26,12 @@ main {
 
     .titles {
         margin: 8px 0;
+        display: flex;
+        justify-content: space-between;
+
+        #cant-be-0 {
+            color: $danger;
+        }
 
         h3 {
             display: inline;

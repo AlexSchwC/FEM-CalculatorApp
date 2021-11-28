@@ -50,6 +50,16 @@ main {
 
 main .titles {
   margin: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .titles #cant-be-0 {
+  color: #eb593f;
 }
 
 main .titles h3 {
