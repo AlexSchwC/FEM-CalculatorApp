@@ -75,7 +75,7 @@ for (let btn of tipButtons) {
 }
 
 function updateValues() {
-    if (nOfPeople == 0) {
+    if (nOfPeople == 0 || isNaN(bill)) {
         tipAmountChange.innerText = '0.00';
         totalValueChange.innerText = '0.00';
     } else {
@@ -104,17 +104,6 @@ resetBtn.addEventListener('click', () => {
     }
     tipButtons[1].id = 'active-btn'
 })
-
-//adicionar event listeners para todos
-//ele deve: remover o #active-btn e todos
-//adicionar o #active btn no que foi clicado
-//tualizar a variavel tip-percent baseado no botão que foi clicado
-
-//custom-btn: change event listener
-//remove o #active-btn dos outros
-//atualizar a variável com o valor inserido
-
-//dois decimais no máximo
 
 
 

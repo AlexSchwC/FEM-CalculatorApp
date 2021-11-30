@@ -1,6 +1,11 @@
 @import 'globais';
 
 body {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-family: $font-prim;
     background-color: $light-cyan-1;
     line-height: 1.4;
@@ -13,6 +18,7 @@ body {
         font-size: 24px;
         letter-spacing: 8px;
         padding: 2rem;
+        padding-bottom: 3rem;
     }
 }
 
@@ -133,6 +139,16 @@ main {
                 }
             }
         }
+    }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1px;
+    font-size: 0.8rem;
+
+    p a {
+        text-decoration: none;
     }
 }
 

@@ -19,6 +19,20 @@ input[type=number] {
 }
 
 body {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Space Mono", monospace;
   background-color: #c5e4e7;
   line-height: 1.4;
@@ -32,6 +46,7 @@ body h1 {
   font-size: 24px;
   letter-spacing: 8px;
   padding: 2rem;
+  padding-bottom: 3rem;
 }
 
 main {
@@ -189,6 +204,16 @@ main .input-div .tip-btn-grid #custom-input::placeholder {
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 1px;
+  font-size: 0.8rem;
+}
+
+.attribution p a {
+  text-decoration: none;
 }
 
 .second-section {
