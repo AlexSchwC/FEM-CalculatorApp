@@ -279,6 +279,11 @@ main .input-div .tip-btn-grid #custom-input::placeholder {
   background-color: #26c0ab;
 }
 
+.second-section-btn button:disabled {
+  background-color: rgba(38, 192, 171, 0.212);
+  pointer-events: none;
+}
+
 .second-section-btn button:hover {
   cursor: pointer;
 }

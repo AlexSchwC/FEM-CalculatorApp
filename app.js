@@ -83,6 +83,7 @@ function updateValues() {
         const totalPerPerson = ((bill * tipValue) / nOfPeople).toFixed(2)
         tipAmountChange.innerText = individualTipAmount;
         totalValueChange.innerText = totalPerPerson;
+        resetBtn.disabled = false;
     }
 }
 
@@ -103,6 +104,8 @@ resetBtn.addEventListener('click', () => {
         customInput.style.outline = 'none';
     }
     tipButtons[1].id = 'active-btn'
+
+    resetBtn.disabled = true;
 })
 
 

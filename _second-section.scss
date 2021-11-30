@@ -43,6 +43,12 @@
             color: $dark-cyan-0;
             background-color: $primaria;
 
+            &:disabled {
+                background-color: $disabled;
+                pointer-events: none;
+
+            }
+
             &:hover {
                 cursor: pointer;
             }
